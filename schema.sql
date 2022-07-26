@@ -45,6 +45,7 @@ CREATE TABLE dept_emp (
     PRIMARY KEY (emp_no, dept_no)
 );
 
+-- DROP TABLE IF EXISTS titles;
 CREATE TABLE titles (
     emp_no INT NOT NULL,
     title VARCHAR(50) NOT NULL,
@@ -54,7 +55,7 @@ CREATE TABLE titles (
     PRIMARY KEY (emp_no, title, from_date)
 );
 
-SELECT * FROM departments;
+SELECT * FROM titles;
 -- 'SELECT' tells Postgres that we're about to query the database
 -- Asterisk tells Postgress that we're looking for every column in a table
 -- 'FROM departments' tells pgAdmin which table to search
