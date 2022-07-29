@@ -25,10 +25,11 @@ The total number of positions that need to be filled as the "silver tsunami" beg
 FROM unique_titles;`
 ![positions_to_be_filled](Data/positions_to_be_filled.png)
 
-Number of qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees:
+Number of qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees.
 
 `SELECT COUNT(emp_no) AS total_mentors
 FROM mentorship_eligibility;`
+
 ![total_mentors](Data/total_mentors.png)
 
 ## Resources
