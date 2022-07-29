@@ -6,6 +6,7 @@ The purpose of this project is to analyze the human resource data of a tech gian
 ## Results
 #### 1. Analysis of the number of retiring employees who were born between 1952 and 1955 by title
 [retiring_titles.csv](Data/retiring_titles.csv)
+
 ![retiring_titles](Data/retiring_titles.png)
 * The table shows that there are 25916  Senior Engineers and 24926 Senior Staff retiring soon. The two senior positions account for about 70% of the total retiree amount. 
 * The second-tier priority group is regular Engineer and Staff postions, as there are 9285 and 7636 positions to be filled, respectively. 
