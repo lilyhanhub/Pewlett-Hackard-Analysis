@@ -4,26 +4,32 @@
 The purpose of this project is to analyze the human resource data of a tech giant company Pewlett Hackard to prepare for the “silver tsunami” as many current employees reach retirement age. So after creating an employee database with SQL schema, the goal of the analysis is twofold: (1) determine the number of retiring employees and their position titles, and (2) identify employees who are eligible to participate in a mentorship program. 
 
 ## Results
-1. Table of retiring employee info with employee number, first name, last name, title, title from date, and title to date for eache employee who was born between 1952 and 1955. 
-* [Complete table](Data/retirement_titles.csv)
-* Data sample
-![Data sample](Data/retirement_titles.png) 
+1. Number of retiring employees by title
+[retiring_titles](Data/retiring_titles.csv)
+![retiring_titles](Data/retiring_titles.png)
+*
 
-2. Table of retiring employees with only the most recent title, by removing the duplicate entries
+2. Table of total 133,776 retiring employees who was born between 1952 and 1955 with the following info: first name, last name, title, title from date, and title to date.
+* Data sample of the [mentorship_eligibility.csv](Data/mentorship_eligibility.csv)
+![Data sample](Data/mentorship_eligibility.png) 
+
 72,458 retiring 
 1549 mentors
 
-### Weather Database
-I generated a set of 2,000 random latitudes and longitudes, retrieved the nearest cities from citipy module, and then performed an API call with the OpenWeatherMap to retrieve the following weather information for each of the 692 cities: latitude and longitude, maximum temperature, percent humidity, percent cloudiness, wind speed, and weather description. Lastly, I added the data to a new DataFrame and exported it as a [.csv file](Weather_Database/WeatherPy_Database.csv). 
-
-### Vacation Itinerary 
-I used the Google Directions API and created a travel itinerary showing the route between four cities in Brazil chosen from the customer's possible travel destinations. 
-![WeatherPy_travel_map](Vacation_Itinerary/WeatherPy_travel_map.png)
-Lastly, I created a marker layer map with a pop-up marker for each city on the itinerary. 
-![WeatherPy_travel_map_markers](Vacation_Itinerary/WeatherPy_travel_map_markers.png)
-
 ## Summary
 The analysis will help future approval of Pewlett-Hackard by generating a list of all employees eligible for the retirement package.  
+
+The total number of positions that need to be filled as the "silver tsunami" begins to make an impact.
+
+`SELECT COUNT(emp_no) AS total_positions_to_be_filled
+FROM unique_titles;`
+![positions_to_be_filled](Data/positions_to_be_filled.png)
+
+Number of qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees:
+
+`SELECT COUNT(emp_no) AS total_mentors
+FROM mentorship_eligibility;`
+![total_mentors](Data/total_mentors.png)
 
 ## Resources
 Software:
