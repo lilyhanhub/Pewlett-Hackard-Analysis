@@ -19,7 +19,7 @@ The analysis concludes by providing the HR manager with the information for the 
 #### 2. Analysis of the number of employees eligible for the mentorship program
 Data sample of the [mentorship_eligibility.csv](Data/mentorship_eligibility.csv)
 ![Data sample](Data/mentorship_eligibility.png) 
-* The table shows that there are 1549 employees born in 1965 having management, senior or regular level positions, who are eligible and for mentoring in the new mentorship program.
+* The table shows that there are 1549 employees born in 1965 having mid- to senior-level positions, who are eligible and for mentoring in the new mentorship program.
 
 ## Summary
 #### Total number of positions that need to be filled as the "silver tsunami" begins to make an impact.
@@ -39,9 +39,9 @@ According to the above results, there will be a significan amount (72458) of fut
 
 #### Table of mentees_per_mentor ratio
 ![mentees_per_mentor](Data/mentees_per_mentor.png)
-The above table provides more insights on if each title has enough mentors prepared: 
+The above table provides more insights on how many mentees a mentor will take on to fulfill the retired roles: 
 * The entry-level and mid-level positions like Assistant Engineer, Engineer, and Staff titles are in a good 20:1 (approximately) mentees per mentor ratio. 
-* For the senior-level positions like Senior Engineer, Senior Staff, Technique Leader, the mentees per mentor ratio are too high, ranging from 46:1 to 85:1. So the HR department is recommended to plan either hire the senior employees externally or increase the amount of the eligible senior mentor pool internally. 
+* For the senior-level positions like Senior Engineer, Senior Staff, Technique Leader, the mentees per mentor ratio are too high, ranging from 46:1 to 85:1. So the HR department is recommended to plan to increase the amount of the eligible senior mentor pool internally or hire some senior employees externally.
 * For the 2 executive-level manager positions, there is no eligible mentor available. Therefore, Pewlett-Hackard might need to hire the two managers externally. 
 
 ## Resources
