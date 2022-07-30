@@ -1,3 +1,4 @@
+-- Deliverable 1
 -- Create a table listing the number of retiring employees by title
 SELECT e.emp_no, e.first_name, e.last_name,
 	t.title, t.from_date, t.to_date
@@ -24,6 +25,7 @@ FROM unique_titles
 GROUP BY title
 ORDER BY title_count DESC;
 
+-- Deliverable 2
 -- Create a mentorship eligibility table 
 SELECT DISTINCT ON(e.emp_no) 
 	e.emp_no, e.first_name, e.last_name, e.birth_date,
@@ -38,5 +40,24 @@ FROM employees as e
 WHERE (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 	AND (de.to_date = '9999-01-01')
 ORDER BY e.emp_no;
- 
+
+-- Deliverable 3 summary 
+-- Create a table of total retiring employees count
+SELECT title, COUNT(emp_no) AS retire_count 
+INTO ut
+FROM unique_titles
+GROUP BY title; 
+-- Create a table of total eligible mentors count
+SELECT title, COUNT(emp_no) AS mentor_count 
+INTO me
+FROM mentorship_eligibility
+GROUP BY title;
+-- Join the two tables of retire_count and mentor_count, and add a column of mentees_per_mentor
+SELECT ut.title, ut.retire_count, me.mentor_count,
+ (ut.retire_count / me.mentor_count) AS mentees_per_mentor
+FROM ut
+LEFT JOIN me
+ON ut.title = me.title
+ORDER BY ut.retire_count DESC
+
 
