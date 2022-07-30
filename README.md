@@ -15,7 +15,7 @@ The purpose of this project is to analyze the human resource data of a tech gian
 #### 2. Analysis of the number of employees eligible for the mentorship program
 Data sample of the [mentorship_eligibility.csv](Data/mentorship_eligibility.csv)
 ![Data sample](Data/mentorship_eligibility.png) 
-* The table shows that there are only 1549 employees born in 1965 having management, senior or regular level positions, who are eligible and for mentoring in the new mentorship program.
+* The table shows that there are 1549 employees born in 1965 having management, senior or regular level positions, who are eligible and for mentoring in the new mentorship program.
 
 ## Summary
 #### Total number of positions that need to be filled as the "silver tsunami" begins to make an impact.
