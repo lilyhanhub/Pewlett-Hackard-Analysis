@@ -1,7 +1,7 @@
 # Pewlett-Hackard-Analysis
 
 ## Overview of the Analysis
-The purpose of this project is to analyze the human resource data of a tech giant company Pewlett Hackard to prepare for the “silver tsunami” as many current employees reach retirement age. So after creating an employee database with SQL schema, the goal of the analysis is twofold: (1) determine the number of retiring employees and their position titles, and (2) identify employees who are eligible to participate in a mentorship program. 
+The purpose of this project is to analyze the human resource data of a tech giant company Pewlett Hackard to prepare for the “silver tsunami” as many current employees reach retirement age. So after creating an employee database with SQL schema, the following analysis reports need to be generated: (1) The number of retiring employees and their position titles, and (2) The number of employees who are eligible to participate in a mentorship program. 
 
 ## Results
 #### 1. Analysis of the number of retiring employees who were born between 1952 and 1955 by title
