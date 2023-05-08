@@ -1,3 +1,10 @@
-SELECT first_name, last_name
-FROM employees
-WHERE birth_date BETWEEN '1952-01-01' AND '1955-12-31';
+"dept_no","dept_name"
+"d001","Marketing"
+"d002","Finance"
+"d003","Human Resources"
+"d004","Production"
+"d005","Development"
+"d006","Quality Management"
+"d007","Sales"
+"d008","Research"
+"d009","Customer Service"
